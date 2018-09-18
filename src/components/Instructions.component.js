@@ -5,7 +5,6 @@ class Instructions extends Component {
   render() {
     return (
       <div className="instructions">
-        Follow the instructions on the README to get started!
         {this.props.shouldDisplayImage && (
           <img
             className="instructions__logo"

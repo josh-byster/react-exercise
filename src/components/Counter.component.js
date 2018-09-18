@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import './../styles/counter.css'
 
 class Counter extends Component {
-  // componentWillReceiveProps(nextProps) {
-  //   this.setState({ count:  })
-  // }
   incrementClick = () => {
+    // Update the parent state
     this.props.changeCount(parseInt(this.props.count, 10) + 1)
   }
   decrementClick = () => {

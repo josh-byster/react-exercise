@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <h1>Hello World!</h1>
+        <h3>Welcome to Josh Byster's React.js Sandbox!</h3>
         <Instructions
           shouldDisplayImage={true}
           items={['First', 'Second', 'Third', 'Fourth', 'Fifth']}
