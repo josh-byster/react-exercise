@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import { Instructions, Counter } from './components'
 import './styles/app.css'
 
 class App extends Component {
+  state = {
+    initialCount: 0
+  }
+  componentDidUpdate() {
+    console.log(this.state.initialCount)
+  }
   render() {
     return (
       <div className="app">
@@ -11,7 +18,17 @@ class App extends Component {
           shouldDisplayImage={true}
           items={['apple', 'banana', 'clementine', 'dragonfruit', 'bl']}
         />
-        <Counter />
+        <input ref="countInput" type="number" />
+        <button
+          onClick={() => {
+            this.setState({
+              initialCount: ReactDOM.findDOMNode(this.refs.countInput).value
+            })
+          }}
+        >
+          hello
+        </button>
+        <Counter count={this.state.initialCount} />
       </div>
     )
   }
