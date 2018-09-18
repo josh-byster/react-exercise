@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import './../styles/instructions.css'
 import ReactDOM from 'react-dom'
+import './../styles/initialCountForm.css'
 
 class InitialCountForm extends Component {
   render() {
     return (
-      <div className="numericInput">
+      <div className="initialCountForm">
+        <h1>Counter</h1>
         <input ref="countInput" type="number" defaultValue={this.props.count} />
         <button
           onClick={() => {
@@ -14,7 +15,7 @@ class InitialCountForm extends Component {
             )
           }}
         >
-          hello
+          Change
         </button>
       </div>
     )

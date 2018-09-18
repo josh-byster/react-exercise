@@ -1,0 +1,21 @@
+.initialCountForm {
+    align-items:center;
+    justify-content: center;
+    button {
+        background-color: #27ae60;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        margin: 5px;
+        text-align: center;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 3px;
+    }
+    input {
+        height: 20px;
+    }
+    h1 {
+        text-align:center;
+    }
+}

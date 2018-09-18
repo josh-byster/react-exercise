@@ -1,11 +1,17 @@
 .instructions {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
-
+  
   &__logo {
     width: 400px;
     padding-top: 1rem;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    margin-block-start: 1px;
+    margin-block-end: 10px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './../styles/instructions.css'
+import './../styles/counter.css'
 
 class Counter extends Component {
   // componentWillReceiveProps(nextProps) {
@@ -14,7 +14,9 @@ class Counter extends Component {
   render() {
     return (
       <div className="counter">
-        <p>The counter is set to {this.props.count}</p>
+        <p>
+          The counter is set to <b>{this.props.count}</b>
+        </p>
         <button onClick={this.incrementClick}>Increment</button>
         <button onClick={this.decrementClick}>Decrement</button>
       </div>

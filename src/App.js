@@ -18,7 +18,7 @@ class App extends Component {
         <h1>Hello World!</h1>
         <Instructions
           shouldDisplayImage={true}
-          items={['apple', 'banana', 'clementine', 'dragonfruit', 'bl']}
+          items={['First', 'Second', 'Third', 'Fourth', 'Fifth']}
         />
         <InitialCountForm
           count={this.state.count}
